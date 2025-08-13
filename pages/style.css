@@ -1,0 +1,67 @@
+:root {
+  --bg: #f9f5f0;
+  --text: #2e2a26;
+  --accent: #b87333;
+  --card: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Merriweather", serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+header {
+  background: url("https://situr.boyaca.gov.co/wp-content/uploads/2021/05/VILLA-DE-LEYVA-1200x350-c-default.jpg")
+    center/cover no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+section {
+  background: var(--card);
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px var(--shadow);
+}
+section h2 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+footer {
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  color: #6d645c;
+  margin-top: 30px;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
